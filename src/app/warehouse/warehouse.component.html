@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-lg-12 col-sm-12">
+          <table width="100%" class="display responsive"  >
+              <thead>
+                  <tr>
+                      <th>N°</th>
+                      <th>nombre</th>
+                      <th style="text-align:center;">Tipo</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor="let datos of lst let i = index">
+                      <td><label>{{(i+1)}}</label></td>
+                      <td>{{datos.name}}</td>
+                      <td style="text-align:center;">{{datos.type==1?"Terrestre":"Maritimo"}}</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+</div>
